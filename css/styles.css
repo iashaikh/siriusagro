@@ -151,9 +151,45 @@ ul {
   color: var(--color-secondary);
 }
 
-.nav__logo span,
-.footer__logo span {
+
+.logo-lockup {
+  display: inline-flex;
+  flex-direction: column;
+  line-height: 1;
+  gap: 0.1rem;
+}
+
+.logo-lockup__name {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-secondary);
+  line-height: 1;
+}
+
+.logo-lockup__name span {
   color: var(--color-accent);
+}
+
+.logo-lockup__brand {
+  font-family: var(--font-body);
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  padding-left: 0.1rem;
+  border-top: 1px solid var(--color-border);
+  padding-top: 0.2rem;
+}
+
+.footer__logo .logo-lockup__name {
+  color: var(--color-dominant);
+}
+
+.footer__logo .logo-lockup__brand {
+  color: rgba(244, 247, 244, 0.5);
+  border-top-color: rgba(244, 247, 244, 0.15);
 }
 
 .nav__links {
